@@ -58,15 +58,15 @@ const obj = [
 
 console.log(obj);
 
-/* 
+
 function sumWeight(...params) {
     let sum = 0
     params.forEach(peso => {
-        sum += peso
+        sum += peso.peso
     })
 
     return sum
 }
 
-const sumWeightZucchini = sumWeight(obj.peso)
-console.log(sumWeightZucchini); */
+const sumWeightZucchini = sumWeight(obj)
+console.log(sumWeightZucchini);
