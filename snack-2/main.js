@@ -9,10 +9,15 @@ const numbers = [1,2,3,4,5,6,7,8,9,10,11,23,43,52,32,1]
 // funzione accetta 3 elementi
 function divideArray (array, a, b) {
 
+    //impostare B come valore massimo 
+    if (b > array.length) {
+      b = array.length;
+    }
+
     //uso slice per definire il valore minimo e quello massimo
-    return array.slice(a, b);
+    return array.slice(a, b-1);
   }
 
 // log
-console.log(divideArray(numbers, 1, 10));
+console.log(divideArray(numbers, 1, 9));
 
